@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOKMARK</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <style>
-      .nav-link{ text-transform: uppercase; margin: 0 20px; }
-      .btn-login { color: #fff; background-color: #FB5859;}
-    </style>
 </head>
 <body>
     <div class="container">
@@ -34,14 +31,14 @@
                             <a class="nav-link" aria-current="page" href="#">Contact</a>
                           </li>
                           <li class="nav-item">
-                            <button type="button" class="btn btn-login nav-link">Login</button>
+                            <button type="button" class="btn btn-danger nav-link" style="color: white">Login</button>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </nav>
             </header>
-            <content>
+            <main>
               <div class="container" style="margin-top: 100px">
                 <div class="row">
                   <div class="col order-1 order-lg-0">
@@ -50,7 +47,7 @@
                     <p><button type="button" class="btn btn-primary">Get in Chrome</button>
                       <button type="button" class="btn btn-secondary">Get in Firefox</button></p>
                   </div>
-                  <div class="col order-0 order-lg-1">
+                  <div class="col order-0 order-lg-1" style="background: url('imagenes/fondo.png') no-repeat right bottom">
                     <img src="imagenes/illustration-hero.svg" alt="" height="300px">
                   </div>
                 </div>
@@ -60,79 +57,181 @@
                   <h1>Freatures</h1>
                   <p>Our aim is to make it quick and easy for you to accesss your favorite websitres. Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
-                <!-- Tabs navs -->
-                  <div style="margin-top: 50px">
-                  <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <a
-                        class="nav-link active"
-                        id="ex2-tab-1"
-                        data-mdb-toggle="tab"
-                        href="#ex2-tabs-1"
-                        role="tab"
-                        aria-controls="ex2-tabs-1"
-                        aria-selected="true"
-                        >Link</a
-                      >
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a
-                        class="nav-link"
-                        id="ex2-tab-2"
-                        data-mdb-toggle="tab"
-                        href="#ex2-tabs-2"
-                        role="tab"
-                        aria-controls="ex2-tabs-2"
-                        aria-selected="false"
-                        >Very very very very long link</a
-                      >
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a
-                        class="nav-link"
-                        id="ex2-tab-3"
-                        data-mdb-toggle="tab"
-                        href="#ex2-tabs-3"
-                        role="tab"
-                        aria-controls="ex2-tabs-3"
-                        aria-selected="false"
-                        >Another link</a
-                      >
-                    </li>
-                  </ul>
-                  <!-- Tabs navs -->
-                  <!-- Tabs content -->
-                  <div class="tab-content" id="ex2-content">
-                    <div
-                      class="tab-pane fade show active"
-                      id="ex2-tabs-1"
-                      role="tabpanel"
-                      aria-labelledby="ex2-tab-1"
-                    >
-                      Tab 1 content
+              </div>
+                <!-- Nav tabs -->
+                  <div class="mt-5">
+                    <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#home">Simple Bookmarking</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu1">Speedy Searching</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Easy Sharing</a>
+                      </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div id="home" class="container tab-pane active">
+                        <div class="container" style="margin-top: 50px">
+                          <div class="row">
+                            <div class="col order-1">
+                              <h2>Bookmark in one click</h2>
+                              <p style="margin: 50px 0; color:#9295A2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quisquam animi consequuntur quod fugiat unde iste doloremque distinctio! Totam fuga odio ipsum, unde porro officia inventore autem aut illo vero?</p>
+                              <p><button type="button" class="btn btn-primary">More info</button></p>
+                            </div>
+                            <div class="col order-0 d-flex flex-row-reverse" style="background: url('imagenes/fondo2.png') no-repeat left bottom;">
+                              <img src="imagenes/illustration-features-tab-1.svg" alt="" height="250px">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="menu1" class="container tab-pane fade">
+                        <div class="container" style="margin-top: 50px">
+                          <div class="row">
+                            <div class="col order-1">
+                              <h1>Intelligent search</h1>
+                              <p style="margin: 50px 0; color:#9295A2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quisquam animi consequuntur quod fugiat unde iste doloremque distinctio! Totam fuga odio ipsum, unde porro officia inventore autem aut illo vero?</p>
+                              <p><button type="button" class="btn btn-primary">More info</button></p>
+                            </div>
+                            <div class="col order-0 d-flex flex-row-reverse" style="background: url('imagenes/fondo2.png') no-repeat left bottom;">
+                              <img src="imagenes/illustration-features-tab-2.svg" alt="" height="300px">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="menu2" class="container tab-pane fade">
+                        <div class="container" style="margin-top: 50px">
+                          <div class="row">
+                            <div class="col order-1">
+                              <h1>Share your bookmarks</h1>
+                              <p style="margin: 50px 0; color:#9295A2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quisquam animi consequuntur quod fugiat unde iste doloremque distinctio! Totam fuga odio ipsum, unde porro officia inventore autem aut illo vero?</p>
+                              <p><button type="button" class="btn btn-primary">More info</button></p>
+                            </div>
+                            <div class="col order-0 d-flex flex-row-reverse" style="background: url('imagenes/fondo2.png') no-repeat left bottom;">
+                              <img src="imagenes/illustration-features-tab-3.svg" alt="" height="300px">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div
-                      class="tab-pane fade"
-                      id="ex2-tabs-2"
-                      role="tabpanel"
-                      aria-labelledby="ex2-tab-2"
-                    >
-                      Tab 2 content
+                  </div>
+                  <!-- Nav tabs -->
+                  <div class="container" style="margin-top: 100px">
+                    <div class="row mx-auto col-lg-5 text-center">
+                      <h2>Download the extension</h2>
+                      <p>Our aim is to make it quick and easy for you to accesss your favorite websitres. Your bookmarks sync between your devices.</p>
                     </div>
-                    <div
-                      class="tab-pane fade"
-                      id="ex2-tabs-3"
-                      role="tabpanel"
-                      aria-labelledby="ex2-tab-3"
-                    >
-                      Tab 3 content
+                  </div>
+                <div class="container mt-5">
+                  <div class="row justify-content-evenly">
+                    <div class="col-sm-12 col-lg-2 card text-center shadow p-3 mb-5 bg-white rounded border-0" style="width: 18rem;">
+                      <img class="card-img-top img-fluid img-thumbnail mx-auto d-block p-4 border-0" src="imagenes/logo-chrome.svg" alt="Card image cap" style="width: 150px;">
+                      <div class="card-body">
+                        <p class="card-text"><h4>Add to Chrome</h4>Minimum version 6.0</p>
+                      </div>
+                      <img src="imagenes/bg-dots.svg">
+                      <button type="button" class="btn btn-primary mt-3">Add & Install Extension</button>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 card text-center shadow p-3 mb-5 bg-white rounded border-0 mt-lg-3" style="width: 18rem;">
+                      <img class="card-img-top img-fluid img-thumbnail mx-auto d-block p-4 border-0" src="imagenes/logo-firefox.svg" alt="Card image cap" style="width: 150px;">
+                      <div class="card-body">
+                        <p class="card-text"><h4>Add to Firefox</h4>Minimum version 6.0</p>
+                      </div>
+                      <img src="imagenes/bg-dots.svg">
+                      <button type="button" class="btn btn-primary mt-3">Add & Install Extension</button>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 card text-center shadow p-3 mb-5 bg-white rounded border-0 mt-lg-5" style="width: 18rem;">
+                      <img class="card-img-top img-fluid img-thumbnail mx-auto d-block p-4 border-0" src="imagenes/logo-opera.svg" alt="Card image cap" style="width: 150px;">
+                      <div class="card-body">
+                        <p class="card-text"><h4>Add to Opera</h4>Minimum version 6.0</p>
+                      </div>
+                      <img src="imagenes/bg-dots.svg">
+                      <button type="button" class="btn btn-primary mt-3">Add & Install Extension</button>
                     </div>
                   </div>
                 </div>
-                <!-- Tabs content -->
+                <div class="container">
+                  <div class="row mx-auto col-lg-5 text-center">
+                    <h2>Frequently Asked Options</h2>
+                    <p>Our aim is to make it quick and easy for you to accesss your favorite websitres.</p>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center d-flex justify-content-center">
+                    <div class="accordion accordion-flush col-8" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is Bookmark?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quam dignissimos eaque tempore, veniam pariatur quaerat quidem? Corporis ut magni non temporibus quibusdam, dolorem tempora reprehenderit nihil deleniti suscipit?</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How can I request a new browser?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat reprehenderit cupiditate nisi quos, quae labore neque facere eligendi quo nulla suscipit aliquid, aspernatur nesciunt recusandae aut corporis amet voluptas molestias!</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Is there a mobile app?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil vel expedita ex asperiores cum neque ducimus odit sit saepe quia distinctio fugiat, laborum debitis quibusdam accusamus qui quae. Totam!</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            What about other Chromium browsers?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed dolorem beatae non molestiae iusto nihil repudiandae quasi excepturi recusandae, voluptas quas quos architecto ducimus accusamus. Esse nostrum impedit suscipit.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contenedor">
+                    <div class="row d-grid gap-2 col-sm-3 mx-auto col-12">
+                      <button class="btn btn-primary btn-lg mt-3" type="button">More info</button>
+                    </div>
+                  </div>   
+                  </div>
+                </div>
               </div>
-            </content>
+            </main>
         </div>
+        <footer>
+          <div class="container-fluid bg-primary mt-5">
+            <div class="container">
+              <div class="row  mx-auto col-lg-5 p-5 text-white d-flex justify-content-center pb-5">
+                35.000 ALREADY JOINES
+                <h2 class="text-center mt-4">Stay up-to-date with what<br>we're doing</h2>
+                <div class="input-group  mt-4">
+                  <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Nombre de usuario del destinatario con complementos de dos botones">
+                  <button class="btn text-white btn-danger" type="button">Botón</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid bg-primary">
+            <div class="row bg-info p-5">
+              
+            </div>
+        </div>
+        </footer>
     </div>
 </body>
 </html>

@@ -1,2 +1,41 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Customización
+$primary: #6567CA;
+$danger: #FB5859;
+$info: #242946;
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+  "info": $info
+);
+
+$nav-link-color: lightgray;
+$nav-tabs-link-active-color: black;
+$nav-link-hover-color: black;
+$nav-link-hover-border: none;
+$nav-tabs-border-width: 0px;
+$nav-link-padding-x: 2rem;
+
+// Sobrescribe el estilo del border inferior en las pestañas activas
+.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 3px solid red !important;
+}
+
+// Sobrescribe el estilo del border inferior en las pestañas inactivas
+.nav-tabs .nav-link:not(.active) {
+  border-bottom: 3px solid lightgray;
+}
+.nav-tabs .nav-link:hover {
+    border: none;
+}
+.nav-tabs .nav-link{
+    margin: 0px !important;
+    text-transform: none !important;
+}
+.nav-link{ text-transform: uppercase; margin: 0 20px; }
+
 // Import Boostrap
 @import '../node_modules/bootstrap/scss/bootstrap';
